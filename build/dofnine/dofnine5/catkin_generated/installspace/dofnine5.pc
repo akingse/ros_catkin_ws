@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: dofnine5
+Description: Description of dofnine5
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

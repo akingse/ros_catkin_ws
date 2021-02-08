@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/devel
+
+Name: dofnine3
+Description: Description of dofnine3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

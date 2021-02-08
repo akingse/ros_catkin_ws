@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/devel
+
+Name: probot_ocr
+Description: Description of probot_ocr
+Version: 0.0.0
+Cflags: -I/home/akingse/catkin_ws/devel/include
+Libs: -L${prefix}/lib -lprobot_ocr
+Requires: cv_bridge image_transport roscpp rospy sensor_msgs std_msgs message_runtime tf

@@ -1,0 +1,105 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7df7/fast && /usr/bin/make -f CMakeFiles/cmTC_a7df7.dir/build.make CMakeFiles/cmTC_a7df7.dir/build
+make[1]: Entering directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7df7.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a7df7.dir/src.c.o   -c /home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a7df7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7df7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a7df7.dir/src.c.o  -o cmTC_a7df7 
+CMakeFiles/cmTC_a7df7.dir/src.c.o: In function `main':
+src.c:(.text+0x3c): undefined reference to `pthread_create'
+src.c:(.text+0x48): undefined reference to `pthread_detach'
+src.c:(.text+0x59): undefined reference to `pthread_join'
+src.c:(.text+0x6d): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a7df7.dir/build.make:86: recipe for target 'cmTC_a7df7' failed
+make[1]: *** [cmTC_a7df7] Error 1
+make[1]: Leaving directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a7df7/fast' failed
+make: *** [cmTC_a7df7/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_89bf3/fast && /usr/bin/make -f CMakeFiles/cmTC_89bf3.dir/build.make CMakeFiles/cmTC_89bf3.dir/build
+make[1]: Entering directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89bf3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_89bf3.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89bf3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89bf3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_89bf3.dir/CheckFunctionExists.c.o  -o cmTC_89bf3  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_89bf3.dir/build.make:86: recipe for target 'cmTC_89bf3' failed
+make[1]: *** [cmTC_89bf3] Error 1
+make[1]: Leaving directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_89bf3/fast' failed
+make: *** [cmTC_89bf3/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7592d/fast && /usr/bin/make -f CMakeFiles/cmTC_7592d.dir/build.make CMakeFiles/cmTC_7592d.dir/build
+make[1]: Entering directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7592d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_7592d.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7592d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7592d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    -rdynamic CMakeFiles/cmTC_7592d.dir/CheckFunctionExists.c.o  -o cmTC_7592d 
+CMakeFiles/cmTC_7592d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7592d.dir/build.make:86: recipe for target 'cmTC_7592d' failed
+make[1]: *** [cmTC_7592d] Error 1
+make[1]: Leaving directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_7592d/fast' failed
+make: *** [cmTC_7592d/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e15fc/fast && /usr/bin/make -f CMakeFiles/cmTC_e15fc.dir/build.make CMakeFiles/cmTC_e15fc.dir/build
+make[1]: Entering directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e15fc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTC_e15fc.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e15fc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e15fc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_    -rdynamic CMakeFiles/cmTC_e15fc.dir/CheckFunctionExists.c.o  -o cmTC_e15fc  /usr/lib/libf77blas.so /usr/lib/libatlas.so 
+CMakeFiles/cmTC_e15fc.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e15fc.dir/build.make:88: recipe for target 'cmTC_e15fc' failed
+make[1]: *** [cmTC_e15fc] Error 1
+make[1]: Leaving directory '/home/akingse/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_e15fc/fast' failed
+make: *** [cmTC_e15fc/fast] Error 2
+
+
+

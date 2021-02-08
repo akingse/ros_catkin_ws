@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: dofnine8
+Description: Description of dofnine8
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

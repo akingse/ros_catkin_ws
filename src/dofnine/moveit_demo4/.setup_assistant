@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dofnine9
+    relative_path: urdf/dofnine9.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/dofnine9.srdf
+  CONFIG:
+    author_name: akignse
+    author_email: akingse@qq.com
+    generated_timestamp: 1610072992

@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: probot_grasping
+Description: Description of probot_grasping
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

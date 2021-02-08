@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: joyrasio
+Description: Description of joyrasio
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+	
+	<node name="ft_sensor" pkg="robotiq_ft_sensor" type="rq_sensor" respawn="true" output="screen">
+		<!--rosparam param="serial_id">ftdi_DAWYTPI9</rosparam-->
+	</node>
+
+</launch>

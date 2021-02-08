@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="dofnine5">
+    <link name="base_link">
+        
+<inertial>
+            <origin xyz="9.1669E-19 0.0006188 0.01308" rpy="0 0 0" />
+            <mass value="0.38246" />
+            <inertia ixx="0.00043672" ixy="-5.14E-21" ixz="6.9161E-21" iyy="0.00045103" iyz="7.29E-07" izz="0.00083789" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Link1">
+        
+<inertial>
+            <origin xyz="-4.2686E-10 0.0063042 0.08991" rpy="0 0 0" />
+            <mass value="1.0794" />
+            <inertia ixx="0.0020879" ixy="-3.8162E-10" ixz="1.4826E-10" iyy="0.0019142" iyz="-6.1066E-07" izz="0.0016041" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint1" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="Link1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link2">
+        
+<inertial>
+            <origin xyz="-0.21001 -6.7298E-12 0.11992" rpy="0 0 0" />
+            <mass value="2.5593" />
+            <inertia ixx="0.0045543" ixy="9.5236E-10" ixz="5.851E-07" iyy="0.097115" iyz="7.8875E-13" izz="0.096147" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint2" type="revolute">
+        <origin xyz="0 0 0.09" rpy="1.5708 0 3.1416" />
+        <parent link="Link1" />
+        <child link="Link2" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link3">
+        
+<inertial>
+            <origin xyz="-0.2583 9.2942E-08 0.002554" rpy="0 0 0" />
+            <mass value="1.1711" />
+            <inertia ixx="0.0016101" ixy="-1.5519E-08" ixz="-0.00077549" iyy="0.030627" iyz="2.7799E-08" izz="0.030394" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.563 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint3" type="revolute">
+        <origin xyz="-0.42 0 0" rpy="0 0 0" />
+        <parent link="Link2" />
+        <child link="Link3" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link4">
+        
+<inertial>
+            <origin xyz="1.2298E-09 -0.00011006 0.094386" rpy="0 0 0" />
+            <mass value="0.58201" />
+            <inertia ixx="0.0007618" ixy="-4.4791E-11" ixz="1.4963E-11" iyy="0.00056434" iyz="3.5959E-07" izz="0.00068944" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.234 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint4" type="revolute">
+        <origin xyz="-0.4 0 0" rpy="0 0 0" />
+        <parent link="Link3" />
+        <child link="Link4" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link5">
+        
+<inertial>
+            <origin xyz="-1.1025E-09 -0.00087677 0.093939" rpy="0 0 0" />
+            <mass value="0.53907" />
+            <inertia ixx="0.00070005" ixy="-3.7536E-11" ixz="-2.8082E-11" iyy="0.00054563" iyz="2.8643E-06" izz="0.00062916" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.7856 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint5" type="revolute">
+        <origin xyz="0 0 0.1" rpy="1.5708 0 0" />
+        <parent link="Link4" />
+        <child link="Link5" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link6">
+        
+<inertial>
+            <origin xyz="-2.2204E-16 4.5103E-17 0.075" rpy="0 0 0" />
+            <mass value="0.0084491" />
+            <inertia ixx="2.3386E-06" ixy="-9.6935E-24" ixz="1.3188E-21" iyy="2.3386E-06" iyz="7.3619E-22" izz="1.1568E-06" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 0.6574 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint6" type="revolute">
+        <origin xyz="0 0 0.1" rpy="-1.5708 0 0" />
+        <parent link="Link5" />
+        <child link="Link6" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link7">
+        
+<inertial>
+            <origin xyz="3.1885E-09 -2.9817E-08 -0.25766" rpy="0 0 0" />
+            <mass value="0.18362" />
+            <inertia ixx="0.0052429" ixy="-2.891E-13" ixz="-1.4282E-10" iyy="0.0052429" iyz="1.3378E-09" izz="9.233E-06" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link7.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 0.364 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link7.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint7" type="prismatic">
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <parent link="Link6" />
+        <child link="Link7" />
+        <axis xyz="0 0 1" />
+        <limit lower="0.01" upper="0.5" effort="100" velocity="3" />
+    </joint>
+    <link name="Link8">
+        
+<inertial>
+            <origin xyz="0.036752 3.9744E-08 4.6718E-09" rpy="0 0 0" />
+            <mass value="0.023875" />
+            <inertia ixx="1.1971E-06" ixy="-3.8291E-11" ixz="-4.4295E-12" iyy="1.4442E-05" iyz="-8.1423E-14" izz="1.4588E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link8.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 0.6574 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link8.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint8" type="revolute">
+        <origin xyz="0 0 0.04" rpy="1.5708 0 0" />
+        <parent link="Link7" />
+        <child link="Link8" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="Link9">
+        
+<inertial>
+            <origin xyz="0.050963 2.949E-17 -1.6653E-16" rpy="0 0 0" />
+            <mass value="0.033078" />
+            <inertia ixx="1.6325E-06" ixy="-5.165E-21" ixz="-1.4715E-19" iyy="3.3309E-05" iyz="-9.0143E-22" izz="3.3424E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link9.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/Link9.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint9" type="revolute">
+        <origin xyz="0.08 0 0" rpy="-1.5708 0 0" />
+        <parent link="Link8" />
+        <child link="Link9" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="3" />
+    </joint>
+    <link name="gripper">
+        
+<inertial>
+            <origin xyz="-0.059037 2.949E-17 -1.6653E-16" rpy="0 0 0" />
+            <mass value="0.033078" />
+            <inertia ixx="1.6325E-06" ixy="-5.165E-21" ixz="-1.4715E-19" iyy="3.3309E-05" iyz="-8.2052E-22" izz="3.3424E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/gripper.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://dofnine5/meshes/gripper.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="gripper" type="fixed">
+        <origin xyz="0.11 0 0" rpy="0 0 0" />
+        <parent link="Link9" />
+        <child link="gripper" />
+        <axis xyz="0 0 0" />
+    </joint>
+    
+<transmission name="trans_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint7">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint7">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint7_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint8">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint8">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint8_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_joint9">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint9">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint9_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>

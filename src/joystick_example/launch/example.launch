@@ -1,0 +1,11 @@
+<launch>
+	<node pkg="turtlesim" type="turtlesim_node" name="sim_control"/>
+	<node pkg="joystick_example" type="example" name="example" />
+	<node pkg="joy" type="joy_node" name="joy_node">
+
+	<param name="axis_linear" value="1" type="int" />
+	<param name="axis_angular" value="2" type="int" />
+	<param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+	</node>
+</launch>

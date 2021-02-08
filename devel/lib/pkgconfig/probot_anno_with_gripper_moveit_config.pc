@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/devel
+
+Name: probot_anno_with_gripper_moveit_config
+Description: Description of probot_anno_with_gripper_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

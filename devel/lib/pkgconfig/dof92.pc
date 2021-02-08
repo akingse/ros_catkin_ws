@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/devel
+
+Name: dof92
+Description: Description of dof92
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

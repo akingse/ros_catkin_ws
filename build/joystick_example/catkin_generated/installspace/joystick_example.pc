@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: joystick_example
+Description: Description of joystick_example
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

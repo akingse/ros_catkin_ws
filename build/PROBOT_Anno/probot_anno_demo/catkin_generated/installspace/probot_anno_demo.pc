@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: probot_anno_demo
+Description: Description of probot_anno_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: moveit_core moveit_ros_planning_interface probot_msgs roscpp rospy

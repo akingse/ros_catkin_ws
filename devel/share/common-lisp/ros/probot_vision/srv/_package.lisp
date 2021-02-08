@@ -1,0 +1,10 @@
+(cl:defpackage probot_vision-srv
+  (:use )
+  (:export
+   "DETECTOBJECTSRV"
+   "<DETECTOBJECTSRV-REQUEST>"
+   "DETECTOBJECTSRV-REQUEST"
+   "<DETECTOBJECTSRV-RESPONSE>"
+   "DETECTOBJECTSRV-RESPONSE"
+  ))
+

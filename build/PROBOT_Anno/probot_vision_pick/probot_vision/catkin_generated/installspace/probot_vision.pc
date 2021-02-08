@@ -1,0 +1,8 @@
+prefix=/home/akingse/catkin_ws/install
+
+Name: probot_vision
+Description: Description of probot_vision
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs std_msgs message_runtime

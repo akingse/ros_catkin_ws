@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="dofnine">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="9.16694840266287E-19 0.000618795169331327 0.0130802854264847"
+        rpy="0 0 0" />
+      <mass
+        value="0.382463662284906" />
+      <inertia
+        ixx="0.000436715101142595"
+        ixy="-5.13999880283737E-21"
+        ixz="6.91610142897344E-21"
+        iyy="0.000451031799669552"
+        iyz="7.29000884268053E-07"
+        izz="0.000837893536635359" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="4.2686E-10 -8.9895E-05 0.0063042"
+        rpy="0 0 0" />
+      <mass
+        value="1.0794" />
+      <inertia
+        ixx="0.0020879"
+        ixy="-1.4826E-10"
+        ixz="3.8162E-10"
+        iyy="0.0016041"
+        iyz="-6.1066E-07"
+        izz="0.0019142" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.09"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.209994627926046 -6.7298111527947E-12 0.119922540954011"
+        rpy="0 0 0" />
+      <mass
+        value="2.55928066457366" />
+      <inertia
+        ixx="0.00455429949615839"
+        ixy="9.52358520274591E-10"
+        ixz="5.85104824094678E-07"
+        iyy="0.0971147033093044"
+        iyz="7.88752116586999E-13"
+        izz="0.0961474311368105" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-0.42 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.1417 9.2942E-08 0.002554"
+        rpy="0 0 0" />
+      <mass
+        value="1.1711" />
+      <inertia
+        ixx="0.0016101"
+        ixy="-1.5519E-08"
+        ixz="-0.00077549"
+        iyy="0.030627"
+        iyz="2.7799E-08"
+        izz="0.030394" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.4 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="1.22980003958162E-09 -0.00561370801496067 0.000110059919152278"
+        rpy="0 0 0" />
+      <mass
+        value="0.582005099414678" />
+      <inertia
+        ixx="0.000761796751548953"
+        ixy="1.4963474595435E-11"
+        ixz="4.47914161145852E-11"
+        iyy="0.000689442860316129"
+        iyz="-3.5958850430224E-07"
+        izz="0.00056433773579828" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-1.1025E-09 0.0060608 -0.00087677"
+        rpy="0 0 0" />
+      <mass
+        value="0.53907" />
+      <inertia
+        ixx="0.00070005"
+        ixy="2.8082E-11"
+        ixz="-3.7536E-11"
+        iyy="0.00062916"
+        iyz="-2.8643E-06"
+        izz="0.00054563" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0999999999999999"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="-3.3307E-16 -5.6032E-16 -0.025"
+        rpy="0 0 0" />
+      <mass
+        value="0.0032987" />
+      <inertia
+        ixx="8.6948E-07"
+        ixy="-2.4815E-23"
+        ixz="5.1433E-22"
+        iyy="8.6948E-07"
+        iyz="6.9358E-24"
+        izz="3.645E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.5"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link7">
+    <inertial>
+      <origin
+        xyz="3.18854731506946E-09 -0.297660360929499 2.98166331711563E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.183617294024982" />
+      <inertia
+        ixx="0.00524294237262046"
+        ixy="-1.428154516737E-10"
+        ixz="2.89096359965375E-13"
+        iyy="9.23296314885483E-06"
+        iyz="-1.33778128426419E-09"
+        izz="0.00524285615727475" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.24"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link6" />
+    <child
+      link="Link7" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.5"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link8">
+    <inertial>
+      <origin
+        xyz="-0.0432484909042107 -4.67182920300957E-09 3.97437944221757E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238747438440848" />
+      <inertia
+        ixx="1.19707364590273E-06"
+        ixy="4.42953917967701E-12"
+        ixz="-3.82912865299738E-11"
+        iyy="1.45882633135747E-05"
+        iyz="8.14229097482606E-14"
+        izz="1.44418724339528E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="revolute">
+    <origin
+      xyz="0.0800000000000003 0 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Link7" />
+    <child
+      link="Link8" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+  <link
+    name="Link9">
+    <inertial>
+      <origin
+        xyz="-0.0590365926392159 2.77555756156289E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0330778237140971" />
+      <inertia
+        ixx="1.63246639041287E-06"
+        ixy="2.14877967135162E-20"
+        ixz="-1.77526387219363E-19"
+        iyy="3.33087605310083E-05"
+        iyz="-5.75583551955932E-21"
+        izz="3.34236789352972E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dofnine/meshes/Link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="revolute">
+    <origin
+      xyz="0.11 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link8" />
+    <child
+      link="Link9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="3" />
+  </joint>
+</robot>
